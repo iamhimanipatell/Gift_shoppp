@@ -1,0 +1,102 @@
+/* Container for the details form */
+.details-container {
+    width: 100%;
+    max-width: 600px;  /* Adjusted to give some width for the form */
+    margin: 40px auto;
+    padding: 120px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading styling */
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Grid layout for the form */
+  form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default to one column for smaller screens */
+    gap: 90px;  /* Gap between form fields */
+    padding: 10px;
+  }
+  
+  /* Grid layout for larger screens */
+  @media (min-width: 600px) {
+    form {
+      grid-template-columns: repeat(2, 1fr); /* Two columns layout for larger screens */
+    }
+  }
+  
+  /* Styling for input fields */
+  .details-input {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 8px 0;  /* Margin for vertical spacing between inputs */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Focus state for input fields */
+  .details-input:focus {
+    border-color: #4e73df;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* Styling for select dropdown */
+  select.details-input {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 8px 0;  /* Margin for vertical spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Styling for submit button */
+  .details-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4e73df;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 16px;  /* Margin on top of the button */
+  }
+  
+  /* Hover effect for submit button */
+  .details-button:hover {
+    background-color: #3b5b9e;
+  }
+  
+  /* Small screen adjustments */
+  @media (max-width: 600px) {
+    .details-container {
+      padding: 80px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    /* Adjust form fields for smaller screens */
+    form {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
+  

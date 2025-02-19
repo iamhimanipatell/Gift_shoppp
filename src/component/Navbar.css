@@ -1,0 +1,54 @@
+.navbar { 
+    width: 100%;
+    position: fixed; /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    background: #ff5454;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    z-index: 1000; /* Ensures it's above other content */
+}
+
+/* ✅ Push content down so it's not hidden under navbar */
+.page-content {
+    margin-top: 70px; /* Adjust this value based on navbar height */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cart-count {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5454;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.navbar ul li {
+    cursor: pointer;
+}
+

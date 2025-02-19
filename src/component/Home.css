@@ -1,0 +1,69 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Spacing between Navbar and Heading */
+.heading-container {
+  margin-top: 120px; /* Adjusts spacing from navbar */
+  text-align: center;
+}
+
+/* ✅ Fancy heading */
+.heading-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff5454;
+  margin-bottom: 10px;
+}
+
+/* ✅ Subheading for a cute touch */
+.sub-heading {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 40px; /* Adds space before slider */
+}
+
+/* ✅ Container for slider */
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; /* Space before footer */
+}
+
+/* ✅ Make the slider take up more space */
+.slider-container {
+  width: 80%;
+  height: 50vh; /* Increase height */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Image Slider */
+.image-slider {
+  display: flex;
+  gap: 40px;
+  animation: slide 12s linear infinite;
+  width: 100%;
+}
+
+.image-slider img {
+  width: 500px; /* ✅ Adjust size */
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* ✅ Keyframes for Auto Scrolling Effect */
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); } /* Move left continuously */
+}
